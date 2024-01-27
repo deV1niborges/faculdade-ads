@@ -2,7 +2,7 @@
 
 // Dados do candidato
 
-var idade = 28;
+var idade = 20;
 
 var experienciaAnos = 5;
 
@@ -21,7 +21,6 @@ var nivelEducacaoMinimo = "superior";
 var certificadoObrigatorio = true;
 
 // Verificação de elegibilidade
-
 var elegivel =
   idade >= idadeMinima &&
   experienciaAnos >= experienciaMinimaAnos &&
