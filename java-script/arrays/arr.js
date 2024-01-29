@@ -103,4 +103,19 @@ let tot = numeros.reduce(function (total, numero) {
   return total + numero;
 }, 0);
 
-console.log(tot)
+console.log(tot);
+
+let a = [10, 20, 30, 40, 50, 60];
+
+a.forEach((valor) => console.log(valor));
+
+let result = 0;
+a.forEach((valor) => {
+  result += valor;
+});
+
+console.log(result);
+
+a.forEach(function(valor, indice, array) {
+  console.log(indice)
+})
