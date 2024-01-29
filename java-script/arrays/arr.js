@@ -82,3 +82,25 @@ var pesssoasListagem = funcionarios.filter(function (value) {
 });
 
 console.log(pesssoasListagem);
+
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+let numbers = numeros.map(function (value) {
+  return value * 2;
+});
+console.log(numbers);
+
+let nomesFuncionarios = funcionarios.map((pessoa) => pessoa.nome);
+console.log(nomesFuncionarios);
+
+let total = 0;
+for (var k = 0; k < numeros.length; k++) {
+  total += numeros[k];
+}
+console.log(total);
+
+let tot = numeros.reduce(function (total, numero) {
+  return total + numero;
+}, 0);
+
+console.log(tot)
