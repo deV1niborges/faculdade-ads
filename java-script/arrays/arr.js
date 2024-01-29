@@ -52,70 +52,72 @@ let novos = nomes.splice(0, 1, "Maria");
 console.log(nomes);
 console.log(novos);
 
+// Filtragem de números pares
 let filtragem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 let resultado = filtragem.filter((item) => item % 2 == 0);
 console.log(resultado);
 
+// Filtragem de números menores que 5 usando uma função separada
 function numerosMenores(value) {
   return value < 5;
 }
-
 let numerosEncontrados = filtragem.filter(numerosMenores);
 console.log(numerosEncontrados);
 
+// Filtragem de números maiores que 5 usando uma função anônima
 let numerosFiltrados = filtragem.filter(function (value) {
   return value > 5;
 });
-
 console.log(numerosFiltrados);
 
+// Filtragem de funcionários cujos nomes têm pelo menos 7 caracteres
 let funcionarios = [
   { nome: "Davi", idade: 62 },
   { nome: "Pedro", idade: 18 },
   { nome: "Eduardo", idade: 22 },
   { nome: "João", idade: 30 },
 ];
-
-var pesssoasListagem = funcionarios.filter(function (value) {
+var pessoasListagem = funcionarios.filter(function (value) {
   return value.nome.length >= 7;
 });
+console.log(pessoasListagem);
 
-console.log(pesssoasListagem);
-
+// Mapeamento: dobrar cada valor no array 'numeros'
 let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
 let numbers = numeros.map(function (value) {
   return value * 2;
 });
 console.log(numbers);
 
+// Mapeamento: obter um array com os nomes dos funcionários
 let nomesFuncionarios = funcionarios.map((pessoa) => pessoa.nome);
 console.log(nomesFuncionarios);
 
+// Usando um loop for para calcular a soma de todos os elementos em 'numeros'
 let total = 0;
 for (var k = 0; k < numeros.length; k++) {
   total += numeros[k];
 }
 console.log(total);
 
+// Usando o método reduce para calcular a soma de todos os elementos em 'numeros'
 let tot = numeros.reduce(function (total, numero) {
   return total + numero;
 }, 0);
-
 console.log(tot);
 
+// Iterando sobre o array 'a' usando forEach e exibindo os valores
 let a = [10, 20, 30, 40, 50, 60];
-
 a.forEach((valor) => console.log(valor));
 
+// Calculando a soma dos elementos em 'a' usando forEach
 let result = 0;
 a.forEach((valor) => {
   result += valor;
 });
-
 console.log(result);
 
+// Iterando sobre 'a' e exibindo os índices
 a.forEach(function(valor, indice, array) {
-  console.log(indice)
-})
+  console.log(indice);
+});
