@@ -1,24 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+      }
+      p {
+        max-width: 480px;
+      }
+      img {
+        width: 400px;
+      }
+      video {
+        margin-top: -70px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+      }
+      table {
+        width: 40%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Minha página em Html</h1>
-    <p>Estou cursando Ànalise e Desenvolvimento de Sistemas.</p>
-    <p>Estou ansioso para aprender mais coisas de programação.</p>
-    <a href="https://www.w3.org/">Site oficial da W3C</a>
+    <header>
+      <nav>
+        <ul>
+          <li>Recursos</li>
+          <li>Programas</li>
+          <li>Contato</li>
+        </ul>
+        <a href="https://www.w3.org/">Site oficial da W3C</a>
+      </nav>
+    </header>
     <section>
-      <h2>Programação</h2>
+      <h1>Programação</h1>
       <p>
         A programação é a linguagem universal que capacita a criação de soluções
-        inovadoras, transformando conceitos abstratos em códigos concretos. Com
+        inovadoras, transformando conceitos abstratos em códigos concretos.Com
         linhas de código, construímos o futuro digital, onde a criatividade
-        encontra a lógica, e cada ponto e vírgula representa uma oportunidade de
+        encontra a lógica,e cada ponto e vírgula representa uma oportunidade de
         transformação.
       </p>
+      <figure>
+        <img src="minhas-imagens/codigo.jpg" alt="Codigo de Programação" />
+        <figcaption>Código de Programação</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="minhas-imagens/Linguagens-de-programacao.jpeg"
+          alt="Linguagens de Programação"
+        />
+        <figcaption>Linguagens de Programação</figcaption>
+      </figure>
+      <figure>
+        <img src="minhas-imagens/programacao.jpg" alt="Pessoa Programando" />
+        <figcaption>Pesssoa Programando</figcaption>
+      </figure>
+      <video width="400px" height="400px" controls>
+        <source src="meus-videos/video_programacao.mp4" type="video/mp4" />
+        Seu navegador não é compativel com os videos!
+      </video>
+      <br />
+      <video width="400px" height="400px" controls>
+        <source src="meus-videos/anonimos.mp4" type="video/mp4" />
+        Seu navegador não é compativel com os videos!
+      </video>
+      <br />
+    </section>
+    <section>
+      <h2>Tabela de Linguagens</h2>
+      <p>
+        A lista da tabela inclui algumas das linguagens de programação mais
+        fundamentais e influentes da história da computação. Fortran, surgida em
+        1957, foi uma das primeiras linguagens dedicadas à computação
+        científica. Lisp, nascida em 1958, destacou-se por sua ênfase em
+        manipulação simbólica e contribuições significativas para a inteligência
+        artificial. COBOL, de 1959, foi projetada para processamento de dados
+        empresariais, estabelecendo padrões na indústria.
+      </p>
+      <table>
+        <caption>
+          Linguagens de Programação que Moldaram a Evolução da Computação
+        </caption>
+        <thead>
+          <tr>
+            <th>Linguagens</th>
+            <th>Ano em que Nasceu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fortan</td>
+            <td>1957</td>
+          </tr>
+          <tr>
+            <td>Lisp</td>
+            <td>1958</td>
+          </tr>
+          <tr>
+            <td>Cobol</td>
+            <td>1954</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <footer>Desenvolvido por Vínicius &copy; 2024</footer>
   </body>
