@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        background-color: #38686A;
+        color: #CDC6AE;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+
+      p {
+        max-width: 480px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <h1>Formulários</h1>
+        <form action="page.php" method="post">
+            <fieldset>
+              <legend>Dados do Usuário</legend>
+              <label for="inome">Nome:</label> <br>
+              <input type="text" name="nome" id="inome" required> <br> <br>
+
+              <label for="imail">E-mail:</label> <br>
+              <input type="email" name="email" id="imail" required> <br> <br>
+
+              <label for="idata">Data:</label> <br>
+              <input type="date" name="data" id="idata" required> <br> <br>
+
+              <label for="inumero">Número:</label> <br>
+              <input type="number" name="numero" id="inumero" required> <br> <br>
+
+              <label for="isenha">Senha:</label> <br>
+              <input type="password" name="senha" id="isenha" required> <br> <br>
+  
+              <label for="icoment">Comentário:</label> <br>
+              <textarea name="coment" id="icoment" cols="30" rows="10" required></textarea> <br>
+            </fieldset> <br>
+
+            <fieldset>
+              <legend>Checkbox:</legend>
+              <label>
+                <input type="checkbox" name="checkbox1" value="Bicicleta"> Bicicleta 
+              </label> <br>
+
+              <label>
+                <input type="checkbox" name="checkbox2" value="Carro"> Carro 
+              </label> <br>
+
+              <label>
+                <input type="checkbox" name="checkbox3" value="Moto"> Moto 
+              </label> 
+            </fieldset> <br>
+
+            <fieldset>
+              <legend>Sexo:</legend>
+              <label>
+                <input type="radio" name="sex" value="Masculino" required checked> Masculino
+              </label> <br>
+
+              <label>
+              <input type="radio" name="sex" value="Feminino"> Feminino
+              </label>
+            </fieldset> <br>
+
+            <fieldset>
+              <legend>Carros:</legend>
+              <select name="carros">
+                <option value="Nissan GT-R">Nissan GT-R</option>
+                <option value="Honda Civic Si" selected>Honda Civic Si</option>
+                <option value="Ford Mustang">Ford Mustang</option>
+              </select>
+            </fieldset> <br>
+
+            <button>Salvar</button>
+        </form>
+    </section> <br>
+    <footer>Desenvolvido por Vínicius &copy; 2024</footer>
+  </body>
+</html>
