@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Página Web</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Advanced Bootstrap </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ajuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Corpo -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Programação</h2>
+          <p>
+            Guia Completo para Desenvolvedores Web" O livro "Dominando o
+            Bootstrap" oferece uma abordagem abrangente para desenvolvedores web
+            que desejam aprofundar seu conhecimento sobre o framework Bootstrap.
+            Desde os conceitos básicos até técnicas avançadas de layout
+            responsivo e personalização, este guia fornece instruções passo a
+            passo, exemplos práticos e dicas úteis para criar interfaces web
+            modernas e visualmente atraentes.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Construindo Sites Profissionais com Bootstrap</h2>
+          <p>
+            Práticas Recomendadas e Dicas de Design" "Construindo Sites
+            Profissionais com Bootstrap" é um recurso indispensável para
+            desenvolvedores e designers que buscam criar websites de alta
+            qualidade e desempenho utilizando o Bootstrap. Este livro destaca as
+            melhores práticas de design e desenvolvimento, incluindo otimização
+            de desempenho, acessibilidade e integração de componentes
+            personalizados, para garantir que seus projetos se destaquem na web
+            atual.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Bootstrap Além do Básico</h2>
+          <p>
+            Explorando Recursos Avançados para Desenvolvimento Web" Explore as
+            possibilidades avançadas do Bootstrap com "Bootstrap Além do
+            Básico". Este livro vai além dos fundamentos do framework,
+            mergulhando em recursos avançados, como o uso de plugins JavaScript,
+            personalização avançada de estilos e integração com frameworks
+            front-end populares. Com exemplos práticos e técnicas avançadas,
+            você estará preparado para criar experiências web sofisticadas e
+            inovadoras.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        &copy; <span id="year"></span> Minha Página Web
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      // Script para atualizar o ano no rodapé
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

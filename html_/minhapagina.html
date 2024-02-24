@@ -4,20 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Recursos</a></li>
-          <li><a href="#">Programas</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
+    <header class="container-fluid p-2 text-center">
+      <nav class="navbar navbar-expand-lg menu-branco">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-link" href="#"
+            >Desenvolvimento Front-end</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Programas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contato
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <h1>Programação</h1>
     </header>
-    <section id="programmer">
+    <section class="container-fluid text-center">
       <h2>Programando</h2>
       <p>
         A programação é a linguagem universal que capacita a criação de soluções
@@ -26,37 +75,26 @@
         encontra a lógica,e cada ponto e vírgula representa uma oportunidade de
         transformação.
       </p>
-      <div class="figuras">
-        <figure>
+      <div class="row">
+        <figure class="col text-center">
           <img src="minhas-imagens/codigo.jpg" alt="Codigo de Programação" />
           <figcaption>Código de Programação</figcaption>
         </figure>
-        <figure>
+        <figure class="col text-center">
           <img
             src="minhas-imagens/Linguagens-de-programacao.jpeg"
             alt="Linguagens de Programação"
           />
           <figcaption>Linguagens de Programação</figcaption>
         </figure>
-        <figure>
+        <figure class="col text-center">
           <img src="minhas-imagens/programacao.jpg" alt="Pessoa Programando" />
           <figcaption>Pesssoa Programando</figcaption>
         </figure>
       </div>
-      <div class="videos">
-        <video width="400px" height="400px" controls>
-          <source src="meus-videos/video_programacao.mp4" type="video/mp4" />
-          Seu navegador não é compativel com os videos!
-        </video>
-        <br />
-        <video width="400px" height="400px" controls>
-          <source src="meus-videos/anonimos.mp4" type="video/mp4" />
-          Seu navegador não é compativel com os videos!
-        </video>
-      </div>
       <br />
     </section>
-    <section>
+    <section class="container-fluid minha-cor text-center">
       <h2>Tabela de Linguagens</h2>
       <p>
         A lista da tabela inclui algumas das linguagens de programação mais
@@ -67,7 +105,7 @@
         artificial. COBOL, de 1959, foi projetada para processamento de dados
         empresariais, estabelecendo padrões na indústria.
       </p>
-      <table>
+      <table class="table table-striped table-light table-bordered table-hover border-secondary">
         <caption>
           Linguagens de Programação que Moldaram a Evolução da Computação
         </caption>
@@ -77,7 +115,7 @@
             <th>Ano em que Nasceu</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
           <tr>
             <td>Fortan</td>
             <td>1957</td>
@@ -93,6 +131,14 @@
         </tbody>
       </table>
     </section>
-    <footer>Desenvolvido por Vínicius &copy; 2024</footer>
+    <br>
+    <footer class="container-fluid item-foot text-center">
+      Desenvolvido por Vínicius &copy; 2024
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
