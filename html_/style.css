@@ -9,8 +9,8 @@
 
 body,
 html {
-  overflow-x: hidden;
   font-family: Lato, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -18,16 +18,18 @@ header {
 }
 
 h1 {
-  padding: 25px;
-  font-size: 60px;
-  color: white;
+  font-weight: 600;
+  padding: 20px;
+  font-size: 40px;
+  color: #011627;
 }
 
 p {
   color: #2d728f;
+}
+
+p#justif {
   text-align: justify;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 caption,
@@ -37,7 +39,6 @@ figcaption {
 }
 
 h2 {
-  text-align: center;
   font-size: 24px;
   text-transform: uppercase;
   color: #011627;
@@ -45,12 +46,7 @@ h2 {
   margin: 15px;
 }
 
-img {
-  height: 300px;
-  width: 350px;
-}
-
-.menu-branco {
+.menu-azul {
   background-color: #0e0e52;
 }
 
@@ -75,3 +71,11 @@ section {
   max-width: 1199px;
 }
 
+.carousel-caption h5 {
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #0505fcbe;
+}
+
+img#pixel {
+  max-height: 200px;
+}
