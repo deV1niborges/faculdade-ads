@@ -1,2 +1,2 @@
 # faculdade-ads
- Faculdade de Analise e Desenvolvimento de Sistemas
+ Faculdade de Análise e Desenvolvimento de Sistemas
