@@ -4,10 +4,16 @@
  */
 package array;
 
-public class Array {
-
+public class Main {
     public static void main(String[] args) {
-        System.out.println("kakfjksajf");
+        int i, j;
+        int[][] array = {{1, 2, 3},{4, 5, 6}};
+
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < 3; j++) {
+                System.out.println(array[i] [j]);
+            }
+        }
     }
-    
 }
+
