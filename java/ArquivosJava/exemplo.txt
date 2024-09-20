@@ -1,0 +1,2 @@
+Olá, esse é um exemplo de escrita em arquivo!
+Mais uma linha de texto.
